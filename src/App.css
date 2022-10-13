@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   height: 100vh;
-  display: flex;
+  background-color: rgb(244, 244, 244);
 }
 
 .App-logo {
@@ -38,3 +38,50 @@
     transform: rotate(360deg);
   }
 }
+
+#main-search-button::before {
+  content: "";
+  display: block;
+  height: 25px;
+  border-left: 1px solid #e6e6e6;
+  position: absolute;
+  top: 12px;
+}
+
+@media ( max-width: 1210px ) {
+  .searchbar-wrapper{
+    margin: unset !important;
+  }
+}
+
+ul{
+  padding: unset;
+  margin: unset;
+}
+
+ul.breadcrumb {
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+  font-size: 15px;
+}
+
+ul.breadcrumb a {
+  text-decoration: none;
+  color: #3483fa;
+  font-size: 15px;
+}
+
+.item-details-header > div > p{
+  margin: unset !important;
+} 
